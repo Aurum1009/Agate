@@ -1,0 +1,25 @@
+{
+  "name": "agate-syntax-highlighting",
+  "displayName": "Agate Syntax Highlighting",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "agate",
+      "aliases": ["Agate", "agate"],
+      "extensions": [".ag",".agate"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "agate",
+      "scopeName": "source.ag",
+      "path": "./syntaxes/agate.tmLanguage.json"
+    }]
+  }
+}

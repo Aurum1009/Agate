@@ -34,15 +34,3 @@ pub enum Target {
     /// Compile the Agate AST into Agate's human-readable version of its bytecode, AVIAN
     Avian,
 }
-
-/// A global implementation of the main Args, but without the `clap` implementations
-/// derived, and better information held.
-pub struct GlobalArgs {
-    path: String,
-    opt_level: u8,
-    profile: Profile,
-    output: String,
-    target: Target,
-    recursive_opt: bool,
-    run: bool,
-}

@@ -3,7 +3,6 @@
 //! This is the official way to compile, test-run generated .wasm, and run the Agate programming language.
 
 use clap::{Arg, ArgAction, Command};
-use utils::{MAJOR_VERSION, MINOR_VERSION, PATCH};
 
 fn main() {
     let mut command = Command::new("agate")

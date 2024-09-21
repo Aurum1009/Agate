@@ -1,7 +1,7 @@
-use crate::{repr::SimpleProjectRepr, scanner::Scanner};
+use crate::{repr::SimpleFileRepr, scanner::Scanner};
 
 pub struct Parser<'src, 'repr> {
     source: &'src String,
     scanner: Scanner<'src>,
-    repr: &'repr mut SimpleProjectRepr,
+    repr: &'repr mut SimpleFileRepr,
 }

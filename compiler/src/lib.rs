@@ -25,8 +25,10 @@
     rustdoc::suspicious_doc_comments
 )]
 
-extern crate self as _;
-
+/// ## The `compiler::parser` Module
+///
+/// This module contains all code for the parser. The parser takes in a String (and some args for
+/// configuration) and will output a SimpleFileRepr.
 mod parser;
 mod repr;
 mod scanner;

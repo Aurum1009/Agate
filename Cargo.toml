@@ -3,28 +3,11 @@ name = "agate"
 version = "0.1.0"
 edition = "2021"
 authors = ["Cooper Bouchard <cobouchard11@gmail.com>"]
+license = "MIT OR Apache-2.0"
 
 [dependencies]
+utils = { path = "utils" }                                             # licence = unnecessary (made by us)
 clap = { version = "4.5.17", features = ["unicode", "derive", "env"] }
-utils = { path = "utils" }
 
 [workspace]
 members = ["compiler", "utils"]
-
-[workspace.dependencies]
-# Errors + terminal stuff
-colored = "2.1.0"
-crossterm = "0.28.1"
-miette = "7.2.0"
-# Parallelism - assorted
-crossbeam = "0.8.4"
-parking_lot = "0.12.3"
-rayon = "1.10.0"
-# Wasmime
-wasmtime = "24.0.0"
-wasmtime-cranelift = "24.0.0"
-# Cranelift
-cranelift = "0.111.0"
-cranelift-object = "0.111.0"
-cranelift-module = "0.111.0"
-cranelift-wasm = "0.111.0"

@@ -92,7 +92,7 @@ impl<'src> Scanner<'src> {
         self.columns.end += 1;
         if self.is_at_end() {
             Err((
-                "Unexpected end of input".to_string(),
+                "Unexpected end of file".to_string(),
                 self.line,
                 self.columns.end,
             ))
@@ -102,6 +102,13 @@ impl<'src> Scanner<'src> {
     }
     fn peek(&self) -> &char {
         &self.chars[self.current]
+    }
+    fn peek_next(&self) -> Option<&char> {
+        if self.chars.len() <= self.current + 1 {
+            None
+        } else {
+            Some(&self.chars[self.current + 1])
+        }
     }
     fn tok(&self, kind: TokenType) -> Token {
         Token::new(
@@ -252,8 +259,7 @@ impl<'src> Scanner<'src> {
                 }
             }
             // literals
-            '"' => self.string('"'),
-            '`' => self.string('`'),
+            '"' => self.string(),
             '\'' => self.char(),
             c => {
                 if c.is_alphabetic() {
@@ -272,15 +278,65 @@ impl<'src> Scanner<'src> {
     }
 
     fn number(&mut self) -> ScanResult {
-        todo!()
+        while self.peek().is_numeric() {
+            self.advance()?;
+        }
+        if self.peek() == &'.' && self.peek_next() == Some(&'1') {
+            self.advance()?;
+
+            while self.peek().is_numeric() {
+                self.advance()?;
+            }
+
+            ok_tok!(self, Decimal)
+        } else {
+            ok_tok!(self, Integer)
+        }
     }
     fn ident(&mut self) -> ScanResult {
-        todo!()
+        while self.peek().is_alphanumeric() {
+            self.advance()?;
+        }
+        let slice = &self.source[self.start..self.current];
+        return match slice {
+            "and" => ok_tok!(self, And),
+            "or" => ok_tok!(self, Or),
+            "let" => ok_tok!(self, Let),
+            "var" => ok_tok!(self, Var),
+            "global" => ok_tok!(self, Global),
+            "mut" => ok_tok!(self, Mut),
+            "if" => ok_tok!(self, If),
+            "unless" => ok_tok!(self, Unless),
+            "while" => ok_tok!(self, While),
+            "until" => ok_tok!(self, Until),
+            "for" => ok_tok!(self, For),
+            "in" => ok_tok!(self, In),
+            "loop" => ok_tok!(self, Loop),
+            "func" => ok_tok!(self, Func),
+            "Self" => ok_tok!(self, CapitalSelf),
+            "self" => ok_tok!(self, _Self),
+            "class" => ok_tok!(self, Class),
+            "pub" => ok_tok!(self, Pub),
+            "true" => ok_tok!(self, True),
+            "false" => ok_tok!(self, False),
+            _ => ok_tok!(self, Identifier),
+        };
     }
     fn char(&mut self) -> ScanResult {
-        todo!()
+        // we do not give it a length now, as we need to handle unicode graphemes correctly
+        while !r#match!(self, '\'') {
+            self.advance()?;
+        }
+        self.advance()?;
+
+        ok_tok!(self, Character)
     }
-    fn string(&mut self, _quote: char) -> ScanResult {
-        todo!()
+    fn string(&mut self) -> ScanResult {
+        while !r#match!(self, '"') {
+            self.advance()?;
+        }
+        self.advance()?; // consume end quote
+
+        ok_tok!(self, String)
     }
 }

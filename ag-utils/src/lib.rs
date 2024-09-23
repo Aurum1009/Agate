@@ -34,3 +34,10 @@ pub enum Target {
     /// Compile the Agate AST into Agate's human-readable version of its bytecode, AVIAN
     Avian,
 }
+
+/// # `agate::utils::objects`
+pub mod objects;
+/// # `agate::utils::value`
+///
+/// This module contains the `Value` enum as well as definitions for some helpful functions. For object definitions and helpers, see `agate::utils::objects`
+pub mod value;

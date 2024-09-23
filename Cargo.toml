@@ -6,8 +6,17 @@ authors = ["Cooper Bouchard <cobouchard11@gmail.com>"]
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-utils = { path = "utils" }                                             # licence = unnecessary (made by us)
-clap = { version = "4.5.17", features = ["unicode", "derive", "env"] }
+ag-utils = { path = "ag-utils" } # licence = unnecessary (made by us)
+clap = { version = "4.5.17", features = [
+    "unicode",
+    "derive",
+    "env",
+] } # license = MIT or Apache-2.0
 
 [workspace]
-members = ["compiler", "utils"]
+members = ["ag-compiler", "ag-utils"]
+
+[workspace.dependencies]
+dashu = "0.4.2"                 # license = MIT or Apache-2.0
+unicode-segmentation = "1.12.0"
+parking_lot = "0.12.3"

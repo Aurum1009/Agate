@@ -25,6 +25,15 @@
     rustdoc::suspicious_doc_comments
 )]
 
+use std::process::exit;
+
+use repr::CanParse;
+
+use self::{
+    parser::Parser,
+    repr::{ModuleRepr, ProjectRepr},
+};
+
 /// ## The `compiler::parser` Module
 ///
 /// This module contains all code for the parser. The parser takes in a String (and some args for
@@ -34,3 +43,18 @@ mod repr;
 mod scanner;
 mod token;
 mod token_type;
+
+/// Compiles the given source into a SimpleProjectRepr. If the file needs to be linked,
+/// a linker will be initialized and the source will be linked into a new module.
+pub fn compile(source: String) {
+    let mut main = ProjectRepr::empty();
+    let had_parse_err = {
+        let mut parser = Parser::new(&source, &mut main, true);
+
+        parser.parse()
+    };
+    if had_parse_err {
+        eprintln!("Parse error occurred, compilation ceasing.");
+        exit(1); // it is safe to use exit() because the parser is dropped already
+    }
+}

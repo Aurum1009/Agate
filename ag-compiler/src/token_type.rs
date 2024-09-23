@@ -49,8 +49,8 @@ pub enum TokenType {
     FatArrow,  // =>
     //  variables
     Let,    // let
-    Const,  // const
-    Static, // static
+    Var,    // var
+    Global, // global
     Mut,    // mut
     Colon,  // :
     // keywords - control flow
@@ -74,15 +74,16 @@ pub enum TokenType {
     ExclusiveRange, // ..
     InclusiveRange, // ..=
     // literals & others
-    Pub,            // pub
-    Identifier,     // ident
-    String,         // "string..."
-    IntegerLiteral, // 1
-    FloatLiteral,   // 1.0
-    True,           // true
-    False,          // false
-    Null,           // null
-    Pipe,           // |>
+    Pub,        // pub
+    Identifier, // ident
+    Character,  // 'c'
+    String,     // "string..."
+    Integer,    // 1
+    Decimal,    // 1.0
+    True,       // true
+    False,      // false
+    Null,       // null
+    Pipe,       // |>
 
     EOF,
 }

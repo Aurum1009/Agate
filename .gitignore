@@ -1,3 +1,14 @@
+# General
 target/
-.vscode/
+*/.vscode
+*/.idea
 
+# Rust Version
+/ag_rs/target
+
+# C# Version
+/AgateCS/.vs
+/AgateCS/bin
+
+# Python Version
+/ag_py/

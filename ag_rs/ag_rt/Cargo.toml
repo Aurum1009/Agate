@@ -1,0 +1,12 @@
+[package]
+name = "ag_rt"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "avm"
+path = "./main.rs"
+
+[dependencies]
+ag-utils = { path = "../ag-utils" }
+crossbeam = { workspace = true }

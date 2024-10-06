@@ -2,6 +2,7 @@
 target/
 */.vscode
 */.idea
+*/.idea/*
 
 # Rust Version
 /ag_rs/target
@@ -9,6 +10,4 @@ target/
 # C# Version
 /AgateCS/.vs
 /AgateCS/bin
-
-# Python Version
-/ag_py/
+/AgateCS/obj

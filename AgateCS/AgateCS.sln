@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.10.35122.118
+VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgateCS", "AgateCS.csproj", "{A747EB49-D6FE-47C7-8ABC-61862468B983}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgateCS", "AgateCS.csproj", "{4B2FE9C3-2EDC-4BF3-AD24-0486087E963E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A747EB49-D6FE-47C7-8ABC-61862468B983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A747EB49-D6FE-47C7-8ABC-61862468B983}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A747EB49-D6FE-47C7-8ABC-61862468B983}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A747EB49-D6FE-47C7-8ABC-61862468B983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B2FE9C3-2EDC-4BF3-AD24-0486087E963E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B2FE9C3-2EDC-4BF3-AD24-0486087E963E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B2FE9C3-2EDC-4BF3-AD24-0486087E963E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B2FE9C3-2EDC-4BF3-AD24-0486087E963E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {423E0084-E689-4466-B1EF-A911D4EB5F98}
+		SolutionGuid = {074D0242-998A-4480-A4C4-F5DF7D8A3B10}
 	EndGlobalSection
 EndGlobal

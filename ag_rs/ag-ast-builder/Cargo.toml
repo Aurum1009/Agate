@@ -1,8 +1,0 @@
-[package]
-name = "ag-ast-builder"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-dashu = { workspace = true }
-ag-utils = { path = "../ag-utils" }

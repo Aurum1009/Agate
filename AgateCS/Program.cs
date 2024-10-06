@@ -5,7 +5,12 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            Console.WriteLine(args);
+            Console.Write("[");
+            foreach (string arg in args)
+            {
+                Console.Write(arg);
+            }
+            Console.WriteLine("]");
         }
     }
 }

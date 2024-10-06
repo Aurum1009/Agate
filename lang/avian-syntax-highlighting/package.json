@@ -1,0 +1,34 @@
+{
+  "name": "avian-syntax-highlighting",
+  "displayName": "avian-syntax-highlighting",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "avian",
+        "aliases": [
+          "avian",
+          "Avian"
+        ],
+        "extensions": [
+          ".avian"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "avian",
+        "scopeName": "source.avian",
+        "path": "./syntaxes/avian.tmLanguage.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "avian",
+  "patterns": [
+    {
+      "name": "comment.line",
+      "match": ";.*$"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "name": "constant.language",
+      "match": "\\b(true|false|null)\\b"
+    },
+    {
+      "name": "storage.type",
+      "match": "\\b(int|uint|float|bool|obj|str|enum)\\b"
+    },
+    {
+      "name": "entity.name.function",
+      "match": "\\b(entry)\\b"
+    },
+    {
+      "name": "entity.name.function",
+      "match": "@[a-zA-Z_][a-zA-Z0-9_]*"
+    },
+    {
+      "name": "constant.numeric",
+      "match": "([0-9]+(.[0-9]+)?)"
+    },
+    {
+      "name": "support.type",
+      "match": "#[a-zA-Z_][a-zA-Z0-9_]*"
+    },
+    {
+      "name": "storage.type",
+      "match": "%[a-zA-Z_][a-zA-Z0-9_]*"
+    },
+    {
+      "name": "variable.other",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.avian",
+          "match": "\\b(lock|unlock|get|include|import|as|from|in|end)\\b"
+        },
+        {
+          "name": "keyword.other",
+          "match": "\\b(def|fn|mod|class|struct|prop|project|interface|values|objects|names|impl)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.avian",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.avian",
+          "match": "\\\\."
+        }
+      ]
+    }
+  },
+  "scopeName": "source.avian"
+}

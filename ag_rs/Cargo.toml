@@ -2,22 +2,15 @@
 name = "agate"
 version = "0.1.0"
 edition = "2021"
-authors = ["Cooper Bouchard <cobouchard11@gmail.com>"]
-license = "MIT OR Apache-2.0"
 
 [dependencies]
-ag-utils = { path = "ag-utils" } # licence = (made by us) MIT or Apache 2.0 
-clap = { version = "4.5.17", features = [
-    "unicode",
-    "derive",
-    "env",
-] } # license = MIT or Apache-2.0
+clap.workspace = true
 
 [workspace]
-members = ["ag-compiler", "ag-utils", "ag-ir", "ag-ast-builder", "ag_rt"]
+members = ["serin"]
+default-members = [".", "serin"]
 
 [workspace.dependencies]
-crossbeam = "0.8.4"
-dashu = "0.4.2"                 # license = MIT or Apache 2.0
-unicode-segmentation = "1.12.0"
+clap = "4.5.19"
+rug = "1.26.1"
 parking_lot = "0.12.3"

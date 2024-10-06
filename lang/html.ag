@@ -1,0 +1,47 @@
+pub interface HTMLItem {
+    func to_html_string(self) -> string;
+}
+
+pub class Div {
+    pub items: list[HTMLItem]
+
+    pub func new() -> Div {
+        Div {
+            items: []
+        }
+    }
+    pub func add_item(mut self, item: HTMLItem) {
+        self.items.push(item)
+    }
+    pub func items(self) -> list[HTMLItem] {
+        return self.items
+    }
+}
+impl HTMLItem for Div {
+    func to_html_string(self) -> string {
+        var str = "<div>"
+
+        for item in self.items {
+            str += item.to_html_string()
+        }
+        str += "</div>"
+        
+        return str
+    }
+}
+
+pub struct Br 
+# struct = a static class in C#, where one exists, it has no fields, and methods are implemented through interfaces.
+# Using it is equivalent to a struct defined as `struct myStruct;` in Rust.
+impl HTMLItem for HTMLDiv {
+    func to_html_string() -> string {
+        return "<br />"
+    }
+}
+
+pub struct Hr
+impl HTMLItem for Hr {
+    func to_html_string() -> string {
+        return "<hr />"
+    }
+}

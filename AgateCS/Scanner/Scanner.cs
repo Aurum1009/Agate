@@ -17,24 +17,15 @@ namespace AgateCS.Scanner
             public string Reason = reason;
             public readonly char Character = c;
 
-            public override string ToString()
-            {
-                return $"{Reason} character '{Character}'";
-            }
-            public string Message()
-            {
-                return ToString();
-            }
+            public override string ToString() => return $"{Reason} character '{Character}'";
+            public string Message() => return ToString();
         }
 
         public readonly struct UnexpectedEnd(string msg) : IScanResult
         {
             public readonly string Msg = msg;
 
-            public string Message()
-            {
-                return Msg;
-            }
+            public string Message() => return Msg;
         }
     }
     

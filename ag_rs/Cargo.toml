@@ -3,14 +3,22 @@ name = "agate"
 version = "0.1.0"
 edition = "2021"
 
+[profile.release]
+lto = "fat"
+opt-level = "z"
+debug = 0
+panic = "abort"
+strip = true
+
 [dependencies]
 clap.workspace = true
 
 [workspace]
-members = ["serin"]
+members = ["serin", "serin-utils", "serin-vm", "serin_ast_builder"]
 default-members = [".", "serin"]
 
 [workspace.dependencies]
 clap = "4.5.19"
-rug = "1.26.1"
 parking_lot = "0.12.3"
+dashu = "0.4.2"
+crossbeam = "0.8.4"

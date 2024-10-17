@@ -1,0 +1,8 @@
+[package]
+name = "serin-vm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+parking_lot.workspace = true
+crossbeam.workspace = true

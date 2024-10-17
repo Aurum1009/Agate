@@ -13,14 +13,15 @@
         Any,
 
         Byte, // u8
-        I32,
-        I64,
-        U32,
-        U64,
-        Int,  // AP int
-        Uint, // AP uint
-        F32,
-        F64,
+        Int,
+        UInt,
+        ApInt,
+        ApUint,
+        Float,
+        ApFloat,
+        String,
+        Char,
+        List,
 
         Union,
         Tuple,
@@ -30,11 +31,11 @@
     {
         public bool IsNullable = IsNullable;
         public TypeTag Tag = Tag;
-        public List<string>? Generics;
+        public List<string>? Generics = null;
         /// <summary>
         /// Types such as members of a union type or members of a tuple type
         /// </summary>
-        public List<Type>? SubTypes;
+        public List<Type>? SubTypes = null;
 
         public static Type Void()
         {

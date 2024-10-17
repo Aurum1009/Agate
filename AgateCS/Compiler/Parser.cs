@@ -1,6 +1,6 @@
 ﻿using AgateCS.Scanner;
 using AgateCS.Scanner.ScanUtils;
-using AgateCS.Utils;
+using AgateCS.Compiler.Ast;
 
 namespace AgateCS.Compiler
 {
@@ -25,7 +25,7 @@ namespace AgateCS.Compiler
                     }
                     else
                     {
-                        Console.Error.WriteLine("Scan Error: ", result.Message());
+                        Console.Error.WriteLine($"Scan Error: {result.Message()}");
                     }
                 }
             }

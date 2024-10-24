@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\cobou\\Agate\\AgateDotnet\\Compiler\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90954DCB-2716-43A7-B06F-A159E527EFF6}|..\\Scanner\\Scanner.fsproj|c:\\users\\cobou\\agate\\agatedotnet\\scanner\\library.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D122C18-9E08-4D88-90B0-8F530F2048B0}|..\\Utils\\Utils.csproj|c:\\users\\cobou\\agate\\agatedotnet\\utils\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90954DCB-2716-43A7-B06F-A159E527EFF6}|..\\Scanner\\Scanner.fsproj|c:\\users\\cobou\\agate\\agatedotnet\\scanner\\scanutils.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D122C18-9E08-4D88-90B0-8F530F2048B0}|..\\Utils\\Utils.csproj|c:\\users\\cobou\\agate\\agatedotnet\\utils\\range.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47A940AE-1CD5-4053-9E69-C4B829617F1F}|Compiler.csproj|c:\\users\\cobou\\agate\\agatedotnet\\compiler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47A940AE-1CD5-4053-9E69-C4B829617F1F}|Compiler.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScanUtils.fs",
+              "DocumentMoniker": "C:\\Users\\cobou\\Agate\\AgateDotnet\\Scanner\\ScanUtils.fs",
+              "RelativeDocumentMoniker": "..\\Scanner\\ScanUtils.fs",
+              "ToolTip": "C:\\Users\\cobou\\Agate\\AgateDotnet\\Scanner\\ScanUtils.fs",
+              "RelativeToolTip": "..\\Scanner\\ScanUtils.fs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-23T02:01:00.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Library.fs",
+              "DocumentMoniker": "C:\\Users\\cobou\\Agate\\AgateDotnet\\Scanner\\Library.fs",
+              "RelativeDocumentMoniker": "..\\Scanner\\Library.fs",
+              "ToolTip": "C:\\Users\\cobou\\Agate\\AgateDotnet\\Scanner\\Library.fs",
+              "RelativeToolTip": "..\\Scanner\\Library.fs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAUwFkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-23T00:41:53.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Token.cs",
+              "DocumentMoniker": "C:\\Users\\cobou\\Agate\\AgateDotnet\\Utils\\Token.cs",
+              "RelativeDocumentMoniker": "..\\Utils\\Token.cs",
+              "ToolTip": "C:\\Users\\cobou\\Agate\\AgateDotnet\\Utils\\Token.cs",
+              "RelativeToolTip": "..\\Utils\\Token.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwBYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T00:40:45.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Range.cs",
+              "DocumentMoniker": "C:\\Users\\cobou\\Agate\\AgateDotnet\\Utils\\Range.cs",
+              "RelativeDocumentMoniker": "..\\Utils\\Range.cs",
+              "ToolTip": "C:\\Users\\cobou\\Agate\\AgateDotnet\\Utils\\Range.cs",
+              "RelativeToolTip": "..\\Utils\\Range.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T02:10:31.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\cobou\\Agate\\AgateDotnet\\Compiler\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\cobou\\Agate\\AgateDotnet\\Compiler\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T01:48:16.987Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

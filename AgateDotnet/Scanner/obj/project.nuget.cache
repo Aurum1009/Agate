@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "k0PXrKOZ6Cs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cobou\\Agate\\AgateDotnet\\Scanner\\Scanner.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cobou\\.nuget\\packages\\fsharp.core\\8.0.400\\fsharp.core.8.0.400.nupkg.sha512"
+  ],
+  "logs": []
+}
